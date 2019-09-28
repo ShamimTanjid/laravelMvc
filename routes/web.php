@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/shamim',function (){
-	echo "Hi shamim";
+	echo "Hi tanijid";
+	echo "</br>";
+	
 	
 });
