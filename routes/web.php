@@ -14,9 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/shamim',function (){
-	echo "Hi tanijid";
-	echo "</br>";
-	
-	
-});
+Route::get('/contactPage','ContactController@ContactInfo')->name('contactpage');
+Route::get('/insert-data','ContactController@InsertData');
+Route::post('/insert-dataadd','ContactController@InsertDataContact');
+Route::get('/Delete-data/{id}','ContactController@DeLATEData');
+Route::get('/Edit-data/{id}','ContactController@EditdataData');
+Route::post('/update-contact/{id}','ContactController@updatetDataContact');
+Route::get('/view-data/{id}','ContactController@viewData');
+
+
+
